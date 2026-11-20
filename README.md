@@ -1,42 +1,38 @@
 # Hi, I'm Billy Feliciano
 
-I work at the intersection of **internal audit, audit analytics, internal controls, GRC, risk analytics, and process improvement**. My focus is turning business risk and analytical evidence into defensible audit judgment, practical control design, stronger processes, and clear management action.
+I help teams put AI to work on review-heavy processes, with an auditor's discipline: clear rules, measured accuracy and a person in the loop where judgment matters.
 
-## Areas of focus
+## What I do
 
-- Internal and operational audit
-- Audit analytics and risk analytics
-- Internal controls and GRC
-- Process improvement and business transformation
-- Program management and cross-functional execution
-- SQL and Python as supporting assurance tools
-- Executive findings, recommendations, and action planning
+- **Scope AI use cases:** separate checks an AI can handle from the ones that need human judgment.
+- **Set the accuracy bar:** write the rubric, label reference examples, and measure the AI against them before anyone relies on it.
+- **Keep humans in the loop:** route uncertain or risky cases to a person, using rules that can be explained.
+- **Help teams adopt AI:** training, simple review steps, and improvements based on reviewer feedback.
+- **Audit analytics:** SQL, Python and Excel testing that turns evidence into management action.
 
-## Featured case study
+## Featured work
+
+### [AI review of customer-care calls](https://github.com/Deadp8l/orivanta-audit-analytics/tree/main/ai-transcript-review)
+
+A Claude reviewer that reads 150 synthetic customer-care calls, checks them against my written rubric, and sends risky calls to a person. I scored it against 150 reference labels I manually reviewed and against a keyword-rules baseline.
+
+- **Claude caught 50 of 50 planted problems; the keyword rules caught 16 of 50 (32%).**
+- I reviewed every disagreement between Claude and my labels. Almost all exposed a gap in the rubric, and I ruled on each one.
+- *Measured on the calls the rubric was tuned on: agreement on the tuning set, not accuracy on new calls.*
+
+[Case study](https://github.com/Deadp8l/orivanta-audit-analytics/blob/main/ai-transcript-review/CASE_STUDY.md) · [Sample output](https://github.com/Deadp8l/orivanta-audit-analytics/blob/main/ai-transcript-review/SAMPLE_OUTPUT.md) · [Rubric](https://github.com/Deadp8l/orivanta-audit-analytics/blob/main/ai-transcript-review/ai_review/rubric.md)
 
 ### [Orivanta Audit Analytics](https://github.com/Deadp8l/orivanta-audit-analytics)
 
-A fully synthetic internal audit case study examining credit authorization, billing accuracy, duplicate processing, documentation, customer-outcome indicators, and account reconciliation.
+A synthetic internal-audit case study on credit authorization, billing accuracy, duplicate processing and account reconciliation.
 
-The project includes:
+- 40 risk-based audit tests; SQL and Python results reconciled on all 37 SQL-supported tests
+- Flagged value kept separate from confirmed loss, so findings aren't overstated
+- Proposed preventive and detective controls, with owners and a phased action plan
 
-- 40 business-risk-led audit tests
-- 1,481 exception and review-lead rows with explicit evidence boundaries
-- 37 of 37 SQL-supported tests reconciled to Python at record-ID level
-- 69 enhanced reference scenarios across nine priority tests
-- Financial measures separated to avoid presenting flagged activity as confirmed loss
-- Proposed preventive controls, detective monitoring, ownership, and a phased management action plan
+[Recruiter case study (PDF)](https://github.com/Deadp8l/orivanta-audit-analytics/blob/main/case-study/Orivanta_Recruiter_Case_Study.pdf) · [Technical appendix (PDF)](https://github.com/Deadp8l/orivanta-audit-analytics/blob/main/technical-appendix/Orivanta_Technical_Evidence_Appendix.pdf)
 
-[View the recruiter case study](https://github.com/Deadp8l/orivanta-audit-analytics/blob/main/case-study/Orivanta_Recruiter_Case_Study.pdf) · [Review the technical evidence appendix](https://github.com/Deadp8l/orivanta-audit-analytics/blob/main/technical-appendix/Orivanta_Technical_Evidence_Appendix.pdf)
-
-## How I approach the work
-
-1. Start with the business risk and management decision.
-2. Define the control objective and evidence required.
-3. Design analytical testing around the risk—not around the available tool.
-4. Reconcile implementation across SQL and Python where appropriate.
-5. Separate direct evidence, corroboration, indicators, and unknowns.
-6. Translate findings into practical controls, accountable ownership, and measurable action.
+*All portfolio data is synthetic. Orivanta is a fictional company.*
 
 ## Connect
 
